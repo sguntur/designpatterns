@@ -15,7 +15,9 @@ class Singleton {
 	@Test
 	void test() {
 		EagerInitialization eagerInstance = EagerInitialization.getInstance();
+		System.out.println(eagerInstance.toString());
 		LazyInitialization lazyInstance = LazyInitialization.getInstance();
+		System.out.println(lazyInstance.toString());
 	}
 
 }
